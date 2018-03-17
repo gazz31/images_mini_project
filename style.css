@@ -2,23 +2,27 @@
 * {margin:0; padding:0;}
 
 
-body 
-{
-    width:100%; margin-left:auto; margin-right:auto;
-}
-
-
 #container
 {
    
-    margin-left: auto;
-    margin-right: auto;
-    width:100%;
-    height:100%;
+    margin: 0 auto;
+    background:#eaeaea;
 }
 
 
-.naglowki 
+.text
+{
+    margin: 0 auto;
+    display: block;
+    width:80%;
+    height:195px;
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(116, 116, 116);
+}
+
+
+.text .naglowki 
 {
 
 
@@ -26,7 +30,7 @@ body
     font-style: italic;
     letter-spacing: 3px;
     padding: 20px 0;
-    background: #fffff;
+    background: #ffffff;
     text-align: center;
     font-size: 24px;
     font-family: "Open Sans";
@@ -36,62 +40,37 @@ body
 
 }
 
-.wymiar
+.text .wymiar
 {
    
-  margin:5px 0;
-  width:100%;
-  height:7.8em;
+  margin:5px auto;
+  width:80%;
+
+  max-width:1180px;
+    
 }
 
-.cechy_tytul 
+.text .wymiar .cechy_tytul 
 {
     
-  
-  
   text-align:center;
-  margin:0 15%;
+  
   padding:10px 0;
-  margin-bottom:10px
-  line-height: 33px;
+  margin-bottom:10px;
+  width:100%;
   height:6.8em;
   font-size: 16px;
   font-family: "Arial";
   color: rgb(116, 116, 116);
+    
 }
-
-
-
-.cechy 
-{
-   
-  font-size: 14px;
-  font-family: "Arial";
-  color: rgb(116, 116, 116);
-}
-
-
-.text
-{
-   
-    width:100%;
-    height:195px;
-   font-size: 16px;
-   font-family: "Arial";
-   color: rgb(116, 116, 116);
-}
-
-
-
-
-
-
 
 header
 {
     box-sizing:content-box;
-    
+    width:80%;
     padding-bottom:0px;
+    margin:0 auto;
 }
 
 
@@ -101,20 +80,22 @@ header
 
 
 
-#photos
+header #photos
 {
     margin : 0 auto;
     background-repeat: no-repeat;
     height:555px;
-    width:1180px;
+   
+    
     
     
 }
-.up
+header #photos .up
 {
-    
+    margin:0;
+    padding:0;
     display: block;
-    width:1180px;
+    width:100%;
     height:111px;
     
     
@@ -124,27 +105,46 @@ main
 {
     display:block;
     height:250px;
-    width:100%;
-    
-    
-    
-    
-    
-}
-.rest
-{
-    display:inline-block;
+    width:80%;
     margin:0 auto;
-    width:100%;
-    height:390px;
     
+    
+    
+    
+}
+main .rest
+{
+    display:block;
+    
+    width:100%;
+    height:100%;
+   
     
     
     
     
     
 }
-.lewa
+
+main .rest .naglowki 
+{
+    
+
+    border-bottom:15px solid rgb(116, 116, 116, 0.1);
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 3px;
+    padding: 25px 0;
+    background: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Open Sans";
+    color: rgb(75, 75, 75);
+    box-sizing: border-box;
+    
+
+}
+main .rest .lewa
 {
     
     box-sizing: border-box;
@@ -162,7 +162,7 @@ main
 
 
 
-.prawa
+ main .rest .prawa
 {
 
     box-sizing: border-box;
@@ -182,7 +182,7 @@ main
 
 
 
-.linia_1
+main .rest .lewa .linia_1
 {
     
     padding-top: 1px;
@@ -191,10 +191,27 @@ main
     background-color: #ffffff;
     
 }
-.linia_2
+main .rest .lewa .linia_2
 { 
     padding-top: 1px;
-    border:0px solid black;
+    height:18px;
+    width:100%;
+    background-color: #eeeeee;
+    
+}
+
+main .rest .prawa .linia_1
+{
+    
+    padding-top: 1px;
+    height:18px;
+    width:100%;
+    background-color: #ffffff;
+    
+}
+main .rest .prawa .linia_2
+{ 
+    padding-top: 1px;
     height:18px;
     width:100%;
     background-color: #eeeeee;
@@ -205,20 +222,618 @@ main
 
 
 
-
-
-@media (min-width:200px) and (max-width:480px) 
+@media only screen and (max-width:480px) 
 {
-   
+    
+    #container
+    {
+
+        margin: 0 auto;
+        background:#eaeaea;
+    }
+
+
+    .text
+    {
+        margin: 15px auto;
+        display: block;
+        width:100%;
+        height:195px;
+        font-size: 16px;
+        font-family: "Arial";
+        color: rgb(116, 116, 116);
+    }
+
+
+    .text .naglowki 
+    {
+
+
+        font-weight: 500;
+        font-style: italic;
+        letter-spacing: 3px;
+        padding: 20px 0;
+        background: #ffffff;
+        text-align: center;
+        font-size: 24px;
+        font-family: "Open Sans";
+        color: rgb(75, 75, 75);
+        height: 50px;
+        line-height: 50px;
+
+    }
+
+  
+
+    .text .cechy_tytul 
+    {
+      padding:15px;
+      text-align:justify;
+      line-height:15px;    
+      margin:0 auto;
+      width:80%;
+      font-size: 12px;
+      font-family: "Arial";
+      color: rgb(116, 116, 116);
+
+    }
+
+    header
+    {
+        box-sizing:border-box;
+        width:80%;
+       
+        margin:0 auto;
+    }
+
+
+
+
+
+
+
+
+    header #photos
+    {
+        margin : 0 auto;
+        background-repeat: no-repeat;
+        height:100%;
+        margin-bottom:15px;
+
+
+
+    }
+    header #photos .up
+    {
+        margin:0;
+        padding:0;
+        display: block;
+        width:100%;
+        height:40px;
+        
+
+    }
+
+    main
+    {
+        display:block;
+        height:460px;
+        width:100%;
+        margin:0 auto;
+
+
+
+
+    }
+    main .rest
+    {
+        display:block;
+
+        width:100%;
+        height:100%;
+
+
+
+
+
+
+    }
+
+    main .rest .naglowki 
+    {
+
+
+        border-bottom:15px solid rgb(116, 116, 116, 0.1);
+        font-weight: 500;
+        font-style: italic;
+        letter-spacing: 3px;
+        padding: 25px 0;
+        background: #ffffff;
+        text-align: center;
+        font-size: 24px;
+        font-family: "Open Sans";
+        color: rgb(75, 75, 75);
+        box-sizing: border-box;
+
+
+    }
+    main .rest .lewa
+    {
+
+        
+        float:left;
+        border-right:3px solid #eee;
+        font-size: 14px;
+        font-family: "Arial";
+        color: rgb(116, 116, 116);
+        width:50%;      
+        height:80%;
+    }
+
+
+
+
+     main .rest .prawa
+    {
+
+        
+        float:left;
+        border-left:3px solid #eee;
+        font-size: 14px;
+        font-family: "Arial";
+        color: rgb(116, 116, 116);
+        width:50%;
+        height:80%;
+
+
+
+    }
+
+
+
+
+
+    main .rest .lewa .linia_1
+    {
+        
+        
+        height:35px;
+        width:100%;
+        
+
+    }
+    
+    main .rest .lewa .linia_2
+    { 
+        
+        height:35px;
+        width:100%;
+        background-color: #eeeeee;
+
+    }
+    
+    main .rest .lewa .linia_im_0
+    {
+        height:2.3rem;
+        background-color: #ffffff;
+    }
+    
+    
+    main .rest .lewa .linia_im_1
+    {
+        height:4.5rem;
+        background-color: #ffffff;
+    }
+    main .rest .lewa .linia_im_2
+    {
+        height:2.2rem;
+        background-color: #ffffff;
+    }
+    main .rest .lewa .linia_im_3
+    {
+        height:2.5rem;
+        background-color: #eeeeee;
+    }
+    main .rest .prawa .linia_1
+    {
+
+        
+        height:35px;
+        width:100%;
+        background-color: #ffffff;
+
+    }
+    
+    main .rest .prawa .linia_2
+    { 
+        
+        height:35px;
+        width:100%;
+        background-color: #eeeeee;
+
+    }
+    
+    main .rest .prawa .linia_im_2
+    {
+        height:4.5rem;
+        background-color: #ffffff;
+    }
+     main .rest .prawa .linia_im_3
+    {
+        height:3rem;
+        background-color: #eeeeee;
+    }
+    
+    main .rest .prawa .linia_1 .margins
+    {
+        padding:8px;
+    }
+    
+    main .rest .prawa .linia_2 .margins
+    {
+        padding:8px;
+    }
+    
+    main .rest .prawa .linia_im_2 .margins_2
+    {
+        margin:0;
+        height:100%;
+        padding:4px 0px 1px 8px;
+    }
+    main .rest .prawa .linia_im_3 .margins_3
+    {
+        margin:0;
+        height:100%;
+        padding:25px 0px 1px 8px;
+    }
+    main .rest .lewa .linia_1 .margins
+    {
+        padding:8px;
+    }
+    
+    main .rest .lewa .linia_2 .margins
+    {
+        padding:8px;
+    }
+    
+    main .rest .lewa .linia_im_0 .margins_0
+    {
+        margin:0;
+        height:100%;
+        padding:10px 2px;
+        
+    }
+    
+    
+    main .rest .lewa .linia_im_1 .margins_1
+    {
+        margin:0;
+        height:100%;
+        padding:30px 5px 30px 0;
+    }
+    main .rest .lewa .linia_im_2 .margins_2
+    {
+        margin:0;
+        height:100%;
+        padding:10px 4px;
+    }
+    main .rest .lewa .linia_im_3 .margins_3
+    {
+        margin:0;
+        padding:25px 4px;
+        height:100%;
+        
+    }
 }
+
+@media (min-width:480px) and (max-width:980px) 
+{
+        #container
+    {
+
+        margin: 0 auto;
+        background:#eaeaea;
+    }
+
+
+    .text
+    {
+        margin: 15px auto;
+        display: block;
+        width:100%;
+        height:195px;
+        font-size: 16px;
+        font-family: "Arial";
+        color: rgb(116, 116, 116);
+    }
+
+
+    .text .naglowki 
+    {
+
+
+        font-weight: 500;
+        font-style: italic;
+        letter-spacing: 3px;
+        padding: 20px 0;
+        background: #ffffff;
+        text-align: center;
+        font-size: 24px;
+        font-family: "Open Sans";
+        color: rgb(75, 75, 75);
+        height: 50px;
+        line-height: 50px;
+
+    }
+
+  
+
+    .text .cechy_tytul 
+    {
+      padding:15px;
+      text-align:justify;
+      line-height:15px;    
+      margin:0 auto;
+      width:80%;
+      font-size: 12px;
+      font-family: "Arial";
+      color: rgb(116, 116, 116);
+
+    }
+
+    header
+    {
+        box-sizing:border-box;
+        width:80%;
+       
+        margin:0 auto;
+    }
+
+
+
+
+
+
+
+
+    header #photos
+    {
+        margin : 0 auto;
+        background-repeat: no-repeat;
+        height:100%;
+        margin-bottom:15px;
+
+
+
+    }
+    header #photos .up
+    {
+        margin:0;
+        padding:0;
+        display: block;
+        width:100%;
+        height:70px;
+        
+
+    }
+
+    main
+    {
+        display:block;
+        height: 438px;
+        width:100%;
+        margin:0 auto;
+
+
+
+
+    }
+    main .rest
+    {
+        display:block;
+
+        width:100%;
+        height:100%;
+
+
+
+
+
+
+    }
+
+    main .rest .naglowki 
+    {
+
+
+        border-bottom:15px solid rgb(116, 116, 116, 0.1);
+        font-weight: 500;
+        font-style: italic;
+        letter-spacing: 3px;
+        padding: 25px 0;
+        background: #ffffff;
+        text-align: center;
+        font-size: 24px;
+        font-family: "Open Sans";
+        color: rgb(75, 75, 75);
+        box-sizing: border-box;
+
+
+    }
+    main .rest .lewa
+    {
+
+        
+        float:left;
+        border-right:3px solid #eee;
+        font-size: 14px;
+        font-family: "Arial";
+        color: rgb(116, 116, 116);
+        width:50%;      
+        height:80%;
+    }
+
+
+
+
+     main .rest .prawa
+    {
+
+        
+        float:left;
+        border-left:3px solid #eee;
+        font-size: 14px;
+        font-family: "Arial";
+        color: rgb(116, 116, 116);
+        width:50%;
+        height:80%;
+
+
+
+    }
+
+
+
+
+
+    main .rest .lewa .linia_1
+    {
+        
+        
+        height:35px;
+        width:100%;
+        
+
+    }
+    
+    main .rest .lewa .linia_2
+    { 
+        
+        height:35px;
+        width:100%;
+        background-color: #eeeeee;
+
+    }
+    
+    main .rest .lewa .linia_im_0
+    {
+        height:2.3rem;
+        background-color: #ffffff;
+    }
+    
+    
+    main .rest .lewa .linia_im_1
+    {
+        height:5.4rem;
+        background-color: #ffffff;
+    }
+    main .rest .lewa .linia_im_2
+    {
+        height:2.2rem;
+        background-color: #ffffff;
+    }
+    main .rest .lewa .linia_im_3
+    {
+        height:3rem;
+        background-color: #eeeeee;
+    }
+    main .rest .prawa .linia_1
+    {
+
+        
+        height:35px;
+        width:100%;
+        background-color: #ffffff;
+
+    }
+    
+    main .rest .prawa .linia_2
+    { 
+        
+        height:35px;
+        width:100%;
+        background-color: #eeeeee;
+
+    }
+    
+    main .rest .prawa .linia_im_2
+    {
+        height:5.4rem;
+        background-color: #ffffff;
+    }
+    main .rest .prawa .linia_im_3
+    {
+        height:3rem;
+        background-color: #eeeeee;
+    }
+    
+    main .rest .prawa .linia_1 .margins
+    {
+        padding:8px;
+    }
+    
+    main .rest .prawa .linia_2 .margins
+    {
+        padding:8px;
+    }
+    
+    main .rest .prawa .linia_im_2 .margins_2
+    {
+        margin:0;
+        height:100%;
+        padding:15px 0px 0px 8px;
+    }
+    main .rest .prawa .linia_im_3 .margins_3
+    {
+        margin:0;
+        height:100%;
+        padding:8px 0px 0% 8px;
+    }
+    main .rest .lewa .linia_1 .margins
+    {
+        padding:8px;
+    }
+    
+    main .rest .lewa .linia_2 .margins
+    {
+        padding:8px;
+    }
+    
+    main .rest .lewa .linia_im_0 .margins_0
+    {
+        margin:0;
+        height:100%;
+        padding:10px 2px;
+        
+    }
+    
+    
+    main .rest .lewa .linia_im_1 .margins_1
+    {
+        margin:0;
+        height:100%;
+        padding:15px 5px 0 0;
+    }
+    main .rest .lewa .linia_im_2 .margins_2
+    {
+        margin:0;
+        height:100%;
+        padding:10px 4px;
+    }
+    main .rest .lewa .linia_im_3 .margins_3
+    {
+        margin:0;
+        padding:8px 4px;
+        height:100%;
+        
+    }
+    
+}
+
 @media (min-width:1600px) and (max-width:1920px) 
 {
    
 }
 
-@media (min-width:480px) and (max-width:980px) 
-{
-   
-    
-}
+
     
